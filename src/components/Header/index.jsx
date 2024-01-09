@@ -37,7 +37,7 @@ function DrawerAppBar(props) {
       <Divider />
       <List sx={{ justifyContent: "flex-start" }}>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item} disablePadding disableRipple>
             <ListItemButton>
               <ListItemText primary={item} />
             </ListItemButton>
@@ -83,6 +83,7 @@ function DrawerAppBar(props) {
             {navItems.map((item) => (
               <Button
                 key={item}
+                disableRipple
                 sx={{
                   color: "#000000CC",
                   borderRight: "1.5px solid black",
